@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Pago</h1>
+        <form id="payment-form">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="card-number">Número de Tarjeta:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            
+            <label for="expiry-date">Fecha de Vencimiento:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
